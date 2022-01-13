@@ -23,7 +23,7 @@ function ableButtons() {
 }
 
 function evaluate() {
-    let result = expressionMembers[0];
+    let result = 0;
 
     for(let i = 0; i < expressionMembers.length; i++) {
         if(expressionMembers[i] === '*' ) {
@@ -36,7 +36,8 @@ function evaluate() {
     }
 
     expressionMembers = expressionMembers.filter(expressionMember => expressionMember !== 0);
-    
+    result = expressionMembers[0];
+
     for(let i = 0; i < expressionMembers.length; i++) {
         if(expressionMembers[i] === '+' ) {
             result += expressionMembers[i+1];
@@ -44,6 +45,8 @@ function evaluate() {
             result -= expressionMembers[i+1];
         }
     }
+
+    console.log(expressionMembers);
 
     screenValue.innerHTML = result;
     result = 0;
