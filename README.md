@@ -26,5 +26,5 @@ Put in practice the concepts that I've learnt about HTML, CSS and JavaScript.
 
 ## Setup
 
-To run the project locally, download the project and open the index.html in a browser.
+To run the project locally, download the project and open the index.html in a browser or click [here](https://pedroaugusto-melo.github.io/calculator/).
 
